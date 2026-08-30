@@ -1,0 +1,10 @@
+# NEVER publish these. Paths are relative to this folder.
+# (git does not allow a comment on the same line as a pattern)
+
+# opens every group's results
+PASSWORDS.txt
+
+# printable cards — every name and mark in cleartext
+student-reports.html
+
+.DS_Store

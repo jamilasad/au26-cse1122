@@ -1,0 +1,9 @@
+GitHub username : jamilasad
+Repository      : au26-cse1122
+Repository URL  : https://github.com/jamilasad/au26-cse1122
+LIVE LINK       : https://jamilasad.github.io/au26-cse1122/
+
+To confirm at any time, from the project folder:
+    python3 marking/site.py        (the last lines print the repo and the live link)
+or from inside site/:
+    git remote -v

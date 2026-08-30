@@ -1,0 +1,90 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow"><meta name="color-scheme" content="light dark"><title>Practice — CSE-1121/1122 1AM</title><link rel="stylesheet" href="assets/site.css"><script>(function(){var s=localStorage.getItem("thm");if(s)document.documentElement.setAttribute("data-theme",s)})();</script></head><body><nav><div class="w"><span class="brand">CSE-1121 / 1122 <span>· 1AM</span></span>
+<a class="nl" href="index.html">Results</a>
+<a class="nl" href="course.html">The course</a>
+<a class="nl on" href="practice.html">Practice</a>
+<button id="tt" title="Light or dark" aria-label="Toggle theme">◐</button></div></nav><div class="w"><div class="hero rv">
+<p class="eyebrow">Getting better</p><h1>How to practise</h1>
+<p>You have finished beecrowd 1000–1020, so there is nothing beginner-level left there on data types and
+operators — and that is exactly what the retake is on. Here is how to make your own practice.</p></div>
+
+<section class="s rv"><h2>Make your own problems with free AI</h2>
+<p>Gemini and ChatGPT both have free tiers that are more than enough. Used one way they will make you much
+stronger. Used the other way they will destroy you in the exam room, where there is no chat window and
+I am watching you type.</p>
+<div class="grid">
+<div class="tile ac lift"><h4>1 · Ask for problems, never solutions</h4>
+<div class="pr">I am a first-semester C student. I have ONLY
+learned variables, data types, scanf and printf,
+the operators + - * / and %, type casting, and
+library functions like sqrt and pow. I have NOT
+learned if-else, loops, arrays or functions yet.
+
+Give me 8 practice problems I can actually solve
+with only that. Vary the topics. For each: a short
+statement, 2 sample inputs and their exact output.
+
+Do NOT give me code, and do NOT use a loop,
+if-else or array in any problem.</div>
+<p>Solve all eight yourself and run them. <b>That last line matters</b> — without it you will be handed problems needing loops, which you have not learned, and you will think you are bad at C when you are simply not there yet.</p></div>
+<div class="tile ac lift"><h4>2 · Then ask it to check, not to fix</h4>
+<div class="pr">Here is my solution and the wrong output I get
+for input 5 3 4. Tell me ONLY which line to look at
+and what idea I have misunderstood.
+Do not rewrite my code.</div>
+<p>The point is that <b>you</b> find the bug. That is the skill the exam measures.</p></div>
+<div class="tile ok lift"><h4>Good uses</h4><ul style="font-size:14px;margin:0">
+<li>“Explain this compile error: <i>paste it</i>”</li><li>“Why does 5/2 give 2?”</li>
+<li>“Give me 3 tricky test cases for this problem”</li><li>“Explain %d vs %lf like I am a beginner”</li></ul></div>
+<div class="tile lo lift"><h4>These feel like learning and are not</h4><ul style="font-size:14px;margin:0">
+<li>“Write a program that…”</li><li>“Fix my code”</li><li>“Solve beecrowd 1017 for me”</li></ul>
+<p style="margin-top:9px"><b>The honest test:</b> close everything, open a blank file, write it again from
+nothing. If you cannot, you watched it — you did not learn it.</p></div>
+</div></section>
+
+<section class="s rv"><h2>If you lead a group</h2>
+<p>Group marking works one way only: <b>nobody is lifted by the group, but the strongest are pulled down
+by it.</b> Your job is not to do the work for everyone — it is to make sure nobody is left behind.</p>
+<div class="grid">
+<div class="tile ok lift"><h4>Do</h4><ul style="font-size:14px;margin:0">
+<li><b>Ask to see their screen</b>, not their word</li>
+<li>Name exact problem numbers: <i>“1001–1020 except 1009”</i></li>
+<li>Bring your weakest member to the repair session — their retake lifts your group average too</li>
+<li>Get a strong member to explain a problem out loud. Explaining is how <i>they</i> learn it properly</li></ul></div>
+<div class="tile lo lift"><h4>Do not</h4><ul style="font-size:14px;margin:0">
+<li>Report what people tell you without checking</li>
+<li>Write “all problems, all sessions” — the phrase I trust least</li>
+<li>Escalate a member to me before you have genuinely tried</li>
+<li>Solve it for them and let them copy. That helps nobody</li></ul></div>
+</div>
+<p style="margin-top:15px"><b>Say the true number.</b> An honest four beats a fictional six, and after a test
+I always find out anyway.</p>
+<p style="margin-bottom:0"><b>Group F:</b> Muinul has handed leadership to Samiul-Al-Jami. Thank you Muinul
+for starting it — Samiul, the group is yours.</p></section>
+
+<section class="s rv"><h2>The habit that decides everything</h2>
+<div class="grid">
+<div class="tile ac lift"><h4>One hour a day beats seven on Friday</h4><p>This is a physical skill, like handwriting. It builds through daily repetition, not weekend marathons.</p></div>
+<div class="tile ac lift"><h4>Type every line yourself</h4><p>Never copy — not from a friend, a screen, or an AI. Reading a solution feels like learning and is not.</p></div>
+<div class="tile ac lift"><h4>Stuck for 20 minutes? Ask.</h4><p>Twenty minutes of being stuck is where learning happens. Three days is waste.</p></div>
+<div class="tile ac lift"><h4>Keep everything you write</h4><p>One folder, every program. In four years that folder is the difference between “I studied CSE” and “here is what I built”.</p></div>
+</div></section></div><script>
+(function(){var r=document.documentElement,k='thm',s=localStorage.getItem(k);
+ if(s)r.setAttribute('data-theme',s);
+ var b=document.getElementById('tt');b&&b.addEventListener('click',function(){
+  var d=r.getAttribute('data-theme')||(matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light');
+  var n=d==='dark'?'light':'dark';r.setAttribute('data-theme',n);localStorage.setItem(k,n);});
+ if('IntersectionObserver' in window){
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){
+   if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{rootMargin:'0px 0px -40px 0px'});
+  document.querySelectorAll('.rv').forEach(function(e){io.observe(e)});
+ } else document.querySelectorAll('.rv').forEach(function(e){e.classList.add('in')});
+ var cs=document.querySelectorAll('[data-count]');
+ if(cs.length&&'IntersectionObserver' in window&&!matchMedia('(prefers-reduced-motion:reduce)').matches){
+  var io2=new IntersectionObserver(function(es){es.forEach(function(e){if(!e.isIntersecting)return;
+   var el=e.target,to=parseFloat(el.dataset.count),d=el.dataset.dec==='1',t0=null;
+   function step(t){t0=t0||t;var p=Math.min((t-t0)/700,1);
+    el.firstChild.nodeValue=(to*(1-Math.pow(1-p,3))).toFixed(d?1:0);
+    if(p<1)requestAnimationFrame(step)}
+   requestAnimationFrame(step);io2.unobserve(el)})},{});
+  cs.forEach(function(e){io2.observe(e)});}
+})();</script></body></html>
