@@ -1,8 +1,8 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow"><meta name="color-scheme" content="light dark"><title>Practice — CSE-1121/1122 1AM</title><link rel="stylesheet" href="assets/site.css?v=b23f9564"><script>(function(){var s=localStorage.getItem("thm");if(s)document.documentElement.setAttribute("data-theme",s)})();</script></head><body><nav><div class="w"><span class="brand">CSE-1121 / 1122 <span>· 1AM</span></span>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow"><meta name="color-scheme" content="light dark"><title>Practice — CSE-1121/1122 1AM</title><link rel="stylesheet" href="assets/site.css?v=99351429"><script>(function(){var s=localStorage.getItem("thm");if(s)document.documentElement.setAttribute("data-theme",s)})();</script></head><body><nav><div class="w"><span class="brand">CSE-1121 / 1122 <span>· 1AM</span></span>
 <a class="nl" href="index.html">Results</a>
 <a class="nl" href="course.html">The course</a>
 <a class="nl on" href="practice.html">Practice</a>
-<button id="tt" title="Light or dark" aria-label="Toggle theme">◐</button></div></nav><button id="thmb" class="thmb" type="button" aria-label="Change theme" title="Light / dark / follow system">◐</button><div class="w"><div class="hero rv">
+<button id="tt" title="Light or dark" aria-label="Toggle theme">◐</button></div></nav><div class="w"><div class="hero rv">
 <p class="eyebrow">Getting better</p><h1>How to practise</h1>
 <p>You have finished beecrowd 1000–1020, so there is nothing beginner-level left there on data types and
 operators — and that is exactly what the retake is on. Here is how to make your own practice.</p></div>
@@ -87,25 +87,4 @@ for starting it — Samiul, the group is yours.</p></section>
     if(p<1)requestAnimationFrame(step)}
    requestAnimationFrame(step);io2.unobserve(el)})},{});
   cs.forEach(function(e){io2.observe(e)});}
-})();</script><script>
-(function(){
-  var r=document.documentElement, b=document.getElementById('thmb');
-  if(!b) return;
-  var order=['','light','dark'];                 // '' = follow the system
-  function label(){
-    var v=r.getAttribute('data-theme')||'';
-    b.textContent = v==='light' ? '☀' : v==='dark' ? '☽' : '◐';
-    b.title = v==='light' ? 'Light. Click for dark.'
-            : v==='dark'  ? 'Dark. Click to follow your system.'
-            : 'Following your system. Click for light.';
-  }
-  b.addEventListener('click',function(){
-    var v=r.getAttribute('data-theme')||'';
-    var n=order[(order.indexOf(v)+1)%order.length];
-    if(n){ r.setAttribute('data-theme',n); try{localStorage.setItem('thm',n)}catch(e){} }
-    else { r.removeAttribute('data-theme'); try{localStorage.removeItem('thm')}catch(e){} }
-    label();
-  });
-  label();
-})();
-</script></body></html>
+})();</script></body></html>

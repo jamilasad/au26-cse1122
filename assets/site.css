@@ -35,23 +35,17 @@
 :root[data-theme=dark] .gt td.cut,
 :root[data-theme=dark] .all .cut b{color:#e0a45e}
 
-.thmb{position:fixed;right:14px;bottom:14px;z-index:60;width:42px;height:42px;border-radius:50%;
- border:1px solid var(--line);background:var(--card);color:var(--ink);font-size:19px;line-height:1;
- cursor:pointer;box-shadow:0 2px 10px rgba(0,0,0,.18);display:flex;align-items:center;justify-content:center}
-.thmb:hover{background:var(--bg2)}
-.thmb:focus-visible{outline:2px solid var(--acc);outline-offset:2px}
-@media print{.thmb{display:none}}
 
 .all{display:grid;grid-template-columns:repeat(5,1fr);gap:.4rem;margin:.5rem 0 .2rem}
 @media (max-width:420px){.all{grid-template-columns:repeat(3,1fr)}}
-.all div{background:var(--card2,#f5f6f8);border-radius:8px;padding:.45rem .3rem;text-align:center}
-.all b{display:block;font-size:1.15rem;line-height:1.15}
-.all span{font-size:.66rem;color:var(--mut,#5b6570);letter-spacing:.02em}
-.all .t{background:var(--acc-bg,#e3ecf7);outline:1px solid var(--acc,#1f6feb)}
+.all div{background:var(--card2);border-radius:8px;padding:.45rem .3rem;text-align:center}
+.all b{display:block;color:var(--ink);font-size:1.15rem;line-height:1.15}
+.all span{font-size:.66rem;color:var(--mut);letter-spacing:.02em}
+.all .t{background:var(--acc-bg);outline:1px solid var(--acc)}
 pre.src{line-height:1.5;overflow-x:auto;padding:.6rem .2rem .6rem 0}
 pre.src span{display:block;padding:.05rem 0}
 pre.src i{display:inline-block;width:2.2em;text-align:right;margin-right:.8em;
-          color:var(--mut,#9aa4ae);font-style:normal;opacity:.55;user-select:none}
+          color:var(--mut);font-style:normal;opacity:.55;user-select:none}
 
 /* The guilty line. rgba composites over whatever the <pre> background is, so it
    cannot blend into either theme the way a flat tint did. */
@@ -78,14 +72,17 @@ pre.cerr{background:rgba(217,83,79,.14);color:#b3261e;font-size:.8rem;padding:.5
      background:rgba(217,83,79,.10);border-radius:6px;padding:.4rem .6rem}
 :root:not([data-theme="light"]) .why{color:#ffb4ab;background:rgba(255,138,128,.12)}
 
-.up{background:var(--ok-bg,#e8f5e9);border-left:3px solid #2e7d32;border-radius:0 8px 8px 0;padding:.7rem .9rem;margin:.6rem 0;font-size:.93rem;line-height:1.5}
-.grp{font-size:.86rem;color:var(--mut,#5b6570);margin:.35rem 0 .1rem;line-height:1.5}
+.up{background:var(--ok-bg);border-left:3px solid #2e7d32;border-radius:0 8px 8px 0;padding:.7rem .9rem;margin:.6rem 0;font-size:.93rem;line-height:1.5}
+.grp{font-size:.86rem;color:var(--mut);margin:.35rem 0 .1rem;line-height:1.5}
 
 /* ---- tokens ------------------------------------------------------------- */
 :root{
   --bg:#F5F6FA; --bg2:#EDEFF6; --surf:#FFFFFF; --card:#FFFFFF; --line:#E2E6EF;
   --ink:#11141A; --ink2:#414A5A; --mut:#6B7488;
   --acc:#5B4BE0; --acc-s:#7C6BFF; --acc2:#0D9488;
+  --acc-bg:#E6E2FD;
+  --ok-bg:#E3F3E8;
+  --card2:#F0F2F8;
   --ok:#059669; --md:#B45309; --lo:#DC2626;
   --okb:#DCFCE7; --mdb:#FEF3C7; --lob:#FEE2E2;
   --code:#12151C; --codei:#E9ECF3;
@@ -97,6 +94,9 @@ pre.cerr{background:rgba(217,83,79,.14);color:#b3261e;font-size:.8rem;padding:.5
   --bg:#0A0C11; --bg2:#0E1118; --surf:#141922; --card:#161C26; --line:#242B39;
   --ink:#EDF1F8; --ink2:#AFB9CA; --mut:#79839A;
   --acc:#9B8CFF; --acc-s:#B3A6FF; --acc2:#2DD4BF;
+  --acc-bg:#2A2350;
+  --ok-bg:#16301F;
+  --card2:#1E2532;
   --ok:#34D399; --md:#FBBF24; --lo:#FB7185;
   --okb:#0B2B21; --mdb:#2E2510; --lob:#301419;
   --code:#05070B; --codei:#DDE3EE;
@@ -107,6 +107,9 @@ pre.cerr{background:rgba(217,83,79,.14);color:#b3261e;font-size:.8rem;padding:.5
   --bg:#0A0C11; --bg2:#0E1118; --surf:#141922; --card:#161C26; --line:#242B39;
   --ink:#EDF1F8; --ink2:#AFB9CA; --mut:#79839A;
   --acc:#9B8CFF; --acc-s:#B3A6FF; --acc2:#2DD4BF;
+  --acc-bg:#2A2350;
+  --ok-bg:#16301F;
+  --card2:#1E2532;
   --ok:#34D399; --md:#FBBF24; --lo:#FB7185;
   --okb:#0B2B21; --mdb:#2E2510; --lob:#301419;
   --code:#05070B; --codei:#DDE3EE;
