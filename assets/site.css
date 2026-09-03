@@ -4,18 +4,35 @@
 .all b{display:block;font-size:1.15rem;line-height:1.15}
 .all span{font-size:.66rem;color:var(--mut,#5b6570);letter-spacing:.02em}
 .all .t{background:var(--acc-bg,#e3ecf7);outline:1px solid var(--acc,#1f6feb)}
-pre.src{counter-reset:l;line-height:1.45;overflow-x:auto}
-pre.src span{display:block}
-pre.src i{display:inline-block;width:2.1em;text-align:right;margin-right:.7em;
-          color:var(--mut,#9aa4ae);font-style:normal;opacity:.6}
-pre.src span.bad{background:#fdecea;border-left:3px solid #d9534f;margin-left:-3px;padding-left:3px}
-:root:not([data-theme="light"]) pre.src span.bad{background:#3a1f1f}
-@media(prefers-color-scheme:dark){pre.src span.bad{background:#3a1f1f}}
-pre.cerr{background:#fdecea;color:#8c1d18;font-size:.8rem;padding:.5rem .7rem;border-radius:6px;
-         white-space:pre-wrap;margin:.4rem 0}
-:root:not([data-theme="light"]) pre.cerr{background:#3a1f1f;color:#ffb4ab}
-.why{font-size:.85rem;color:#b3261e;margin:.35rem 0 0;font-weight:600}
-:root:not([data-theme="light"]) .why{color:#ffb4ab}
+pre.src{line-height:1.5;overflow-x:auto;padding:.6rem .2rem .6rem 0}
+pre.src span{display:block;padding:.05rem 0}
+pre.src i{display:inline-block;width:2.2em;text-align:right;margin-right:.8em;
+          color:var(--mut,#9aa4ae);font-style:normal;opacity:.55;user-select:none}
+
+/* The guilty line. rgba composites over whatever the <pre> background is, so it
+   cannot blend into either theme the way a flat tint did. */
+pre.src span.bad{
+  background:rgba(217,83,79,.22);
+  box-shadow:inset 4px 0 0 #d9534f;
+  font-weight:600;
+}
+pre.src span.bad i{opacity:1;color:#d9534f;font-weight:700}
+:root:not([data-theme="light"]) pre.src span.bad{background:rgba(255,138,128,.20)}
+:root:not([data-theme="light"]) pre.src span.bad i{color:#ff8a80}
+@media(prefers-color-scheme:dark){
+  :root:not([data-theme="light"]) pre.src span.bad{background:rgba(255,138,128,.20)}
+  :root:not([data-theme="light"]) pre.src span.bad i{color:#ff8a80}
+}
+:root[data-theme="light"] pre.src span.bad{background:rgba(217,83,79,.22)}
+:root[data-theme="light"] pre.src span.bad i{color:#d9534f}
+
+pre.cerr{background:rgba(217,83,79,.14);color:#b3261e;font-size:.8rem;padding:.55rem .75rem;
+         border-radius:6px;white-space:pre-wrap;margin:.45rem 0;
+         box-shadow:inset 3px 0 0 #d9534f}
+:root:not([data-theme="light"]) pre.cerr{background:rgba(255,138,128,.14);color:#ffb4ab}
+.why{font-size:.86rem;color:#b3261e;margin:.4rem 0 .1rem;font-weight:600;
+     background:rgba(217,83,79,.10);border-radius:6px;padding:.4rem .6rem}
+:root:not([data-theme="light"]) .why{color:#ffb4ab;background:rgba(255,138,128,.12)}
 
 .up{background:var(--ok-bg,#e8f5e9);border-left:3px solid #2e7d32;border-radius:0 8px 8px 0;padding:.7rem .9rem;margin:.6rem 0;font-size:.93rem;line-height:1.5}
 .grp{font-size:.86rem;color:var(--mut,#5b6570);margin:.35rem 0 .1rem;line-height:1.5}
