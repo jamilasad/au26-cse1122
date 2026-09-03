@@ -1,4 +1,7 @@
 
+.up{background:var(--ok-bg,#e8f5e9);border-left:3px solid #2e7d32;border-radius:0 8px 8px 0;padding:.7rem .9rem;margin:.6rem 0;font-size:.93rem;line-height:1.5}
+.grp{font-size:.86rem;color:var(--mut,#5b6570);margin:.35rem 0 .1rem;line-height:1.5}
+
 /* ---- tokens ------------------------------------------------------------- */
 :root{
   --bg:#F5F6FA; --bg2:#EDEFF6; --surf:#FFFFFF; --card:#FFFFFF; --line:#E2E6EF;
