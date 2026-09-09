@@ -1,4 +1,4 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow"><meta name="color-scheme" content="light dark"><title>The course — CSE-1121/1122 1AM</title><link rel="stylesheet" href="assets/site.css?v=99351429"><script>(function(){var s=localStorage.getItem("thm");if(s)document.documentElement.setAttribute("data-theme",s)})();</script></head><body><nav><div class="w"><span class="brand">CSE-1121 / 1122 <span>· 1AM</span></span>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow"><meta name="color-scheme" content="light dark"><title>The course — CSE-1121/1122 1AM</title><link rel="stylesheet" href="assets/site.css?v=0aa98976"><script>(function(){var s=localStorage.getItem("thm");if(s)document.documentElement.setAttribute("data-theme",s)})();</script></head><body><nav><div class="w"><span class="brand">CSE-1121 / 1122 <span>· 1AM</span></span>
 <a class="nl" href="index.html">Results</a>
 <a class="nl on" href="course.html">The course</a>
 <a class="nl" href="practice.html">Practice</a>
@@ -10,8 +10,8 @@
 <div class="tw"><table>
 <tr><th>#</th><th>When</th><th>Topic</th><th>Marked</th><th>Retake?</th></tr>
 <tr><td>1</td><td>done</td><td>Data types, operators, input &amp; output</td><td><b>Group</b></td><td>yes</td></tr>
-<tr><td>2</td><td>Week 4</td><td>if-else</td><td>Individual</td><td>no</td></tr>
-<tr><td>3</td><td>Week 6</td><td>Loop — <b>2 problems, 40 min</b></td><td><b>Group</b></td><td>yes</td></tr>
+<tr><td>2</td><td><b>done</b> · 9 Sep</td><td>if-else &mdash; the condition test</td><td>Individual</td><td>no</td></tr>
+<tr><td>3</td><td><b>23 Sep</b></td><td>Loop &mdash; <b>2 problems, 40 min</b></td><td><b>Group</b></td><td>yes &middot; 30 Sep</td></tr>
 <tr><td>—</td><td>Week 7</td><td><b>Mid-term lab</b></td><td>Individual</td><td>no</td></tr>
 <tr><td>4</td><td>Week 8</td><td>Nested loop</td><td><b>Group</b></td><td>yes</td></tr>
 <tr><td>5</td><td>Week 10</td><td>Array — <b>must be written as a function</b></td><td><b>Group</b></td><td>yes</td></tr>
@@ -64,7 +64,46 @@ will be announced here and in class before it takes effect.</div></section>
 <tr><td>Absent without telling me</td><td><b>Zero</b>, and it counts as a zero in your group's average. You still sit it in the repair week.</td></tr>
 </table></div></section>
 
-<section class="s rv"><h2>How your 10 marks are decided</h2>
+<section class="s"><h2>Lab test 2 onwards — the rubric now in force</h2>
+<p style="color:var(--mut);font-size:14.5px">Used from the condition test to the end of the semester. Lab test 1 was marked on the older scheme below.</p>
+<div class="rubw"><table class="rub">
+<tr><th>Worth</th><th>Criterion</th><th>Full marks only if</th><th>Zero if</th></tr>
+<tr><td class="rm">1</td><td><b>Runs</b></td>
+ <td>It compiles with no error <i>and</i> reads every value in the right order, with the right
+ specifier and the <code>&amp;</code>.</td>
+ <td>Any compile error, or any value left unread.</td></tr>
+<tr><td class="rm">2</td><td><b>Logic</b></td>
+ <td>A genuine general method — one that works for any valid input, not just the ones you were shown.</td>
+ <td>Output that is hardcoded, or an <code>if</code>-chain written over the sample inputs themselves.
+ Listing every possible input is not a method.</td></tr>
+<tr><td class="rm">2</td><td><b>Samples</b></td>
+ <td>Every sample in the question produces output identical to the spec.</td>
+ <td>No sample correct. One correct scores 1.</td></tr>
+<tr><td class="rm">4</td><td><b>Hidden</b></td>
+ <td>It passes every hidden test. These are the cases the samples do not show you — the boundaries.</td>
+ <td>Under a third pass. Otherwise it scales with how many do.</td></tr>
+<tr><td class="rm">1</td><td><b>Format</b></td>
+ <td>Spacing, capitalisation and line breaks match the question.</td>
+ <td>Nothing prints at all.</td></tr>
+<tr class="rt"><td class="rm">10</td><td colspan="3"><b>Total</b></td></tr>
+</table></div>
+<div class="grid" style="margin-top:14px">
+<div class="tile lo lift"><h4>These override everything above</h4>
+<p><b>It does not compile</b> — the marks come from what runs, so a build error costs nearly all of
+them. <b>Hardcoded output</b> — zero for the problem. <b>Two papers with the same code</b> — zero for
+both, and both are reported.</p></div>
+<div class="tile md lift"><h4>What earns nothing</h4>
+<p>Effort, neatness, or how long it took. Comments and variable names on their own. Being
+<i>close</i> — the hidden tests are counted, not judged. Code that would work if one line were
+fixed, which is why you compile and run before you submit.</p></div>
+<div class="tile ok lift"><h4>Where the marks actually go</h4>
+<p>Six of the ten ride on tests passing, and most of those are hidden. So the way to a good mark is
+not neat code — it is <b>thinking about the inputs you were not shown</b>: the boundary, the empty
+case, the one where both answers look right.</p></div>
+</div></section>
+
+<section class="s rv"><h2>Lab test 1 — the rubric it was marked on</h2>
+<p style="color:var(--mut);font-size:14.5px">The data-type test only. It has been replaced by the scheme above; nothing below applies to any later test.</p>
 <div class="tw"><table>
 <tr><th></th><th>Marks</th><th>Full marks if</th><th>Zero if</th></tr>
 <tr><td><b>Compiles</b></td><td>1</td><td>It builds. Warnings are ignored.</td><td>Any compile error → <b>the whole problem scores 0</b></td></tr>
